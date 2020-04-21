@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arrwin = []
+    let arrlose = []
+    let arrtie = []
+    let arr = ['r', 'p', 's']
+
+    for( let i = 0 ; i <10 ; i++){
+      num1 = prompt('Choose r (rock), p (paper), or s (scissors)')
+      num2 = arr[Math.floor(Math.random()* 3)]
+      console.log(num2)
+      if( num1 === num2){
+        alert('the game is a tie')
+        arrtie.push('1')
+      }
+      else if(num1==='r' && num2==='s' || num1==='p' && num2==='r' || num1=== 's' && num2 ==='p'){
+      alert('You won')
+      arrwin.push('1')
+      }
+      else{
+        alert('You lost')
+        arrlose.push('1')
+      }
+    }
+    alert(`won: ${arrwin.length}
+    lost: ${arrlose.length}
+    tie: ${arrtie.length} `)
+
+  </script>
+</body>
+</html>

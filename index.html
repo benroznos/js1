@@ -9,26 +9,27 @@
 
 
   <script>
-    let numOne = prompt('What is your first number?')
-    let numTwo = prompt('What is your second number?')
-    let operation = prompt
-    // let name = prompt('What is your name?')
-    // let email = prompt('Enter email')
-    // let username = prompt('Enter username')
-    // let password = prompt('Enter password')
-    // let phonenumber = prompt('What is your phone number?')
-    // let ssn = prompt('Enter SSN')
-    // alert( 'Name: ' + name)
-    // alert (`Email: ${email}`)
-    // alert(
-    //   `Username: ${username}
-    //   Password: ${password}
-    //   Phone Number: ${phonenumber}
-    //   SSN: ${ssn}`)
-      // let bool = true
-      // if (bool === true && bool) {
-      //   console.log ('yoyo')
-      // }
+    // +prompt works just like parseInt(prompt)
+
+let arr = []
+for(j=0; j<100; j++){
+  arr.push(Math.round(Math.random() * 100))
+}
+console.log(arr)
+
+for(i=0 ; i<arr.length ; i++){
+
+  let rem = arr[i] % 2
+  console.log(arr[i])
+  if (rem === 0){
+    console.log('The number is even')
+  }
+
+  else{
+    console.log('The number is odd')}
+}
+
+
 
 
   </script>
